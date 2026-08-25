@@ -42,5 +42,13 @@ public class CineCidade
 
         double valorFinal = custoBruto - desconto;
 
+
+        System.out.println("\Checkout:");
+        System.out.println("Cliente: " + nomeCliente.toUpperCase());
+        System.out.printf("Valor bruto: R$ %.2f%n", custoBruto);
+        System.out.printf("Valor final: R$ %.2f%n", valorFinal);
+        System.out.println(
+                "Elegível para Sessão Noturna: " + elegivelSessaoNoturna
+        );
     }
 }
