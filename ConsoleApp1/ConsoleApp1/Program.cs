@@ -1,4 +1,6 @@
-﻿import java.util.Scanner;
+﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+
+import java.util.Scanner;
 
 public class CineCidade
 {
@@ -31,6 +33,12 @@ public class CineCidade
         {
             desconto = custoBruto * 0.10;
         }
+
+        System.out.print("Idade do cliente: ");
+        int idade = scanner.nextInt();
+
+        boolean elegivelSessaoNoturna =
+                quantidadeIngressos > 1 && idade >= 18;
 
         double valorFinal = custoBruto - desconto;
 
