@@ -25,5 +25,14 @@ public class CineCidade
         double custoBruto =
                 taxaConveniencia + (quantidadeIngressos * precoIngresso);
 
+        double desconto = 0.00;
+
+        if (cupom.equalsIgnoreCase("CINEMA10"))
+        {
+            desconto = custoBruto * 0.10;
+        }
+
+        double valorFinal = custoBruto - desconto;
+
     }
 }
