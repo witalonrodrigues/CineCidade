@@ -11,5 +11,12 @@ public class CineCidade
         String nomeCliente = scanner.nextLine();
 
         scanner.close();
+
+        System.out.print("Quantidade de ingressos: ");
+        int quantidadeIngressos = scanner.nextInt();
+        scanner.nextLine();
+
+        System.out.print("Cupom de desconto: ");
+        String cupom = scanner.nextLine();
     }
 }
