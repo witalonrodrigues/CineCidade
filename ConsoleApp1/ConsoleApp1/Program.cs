@@ -18,5 +18,12 @@ public class CineCidade
 
         System.out.print("Cupom de desconto: ");
         String cupom = scanner.nextLine();
+
+        double taxaConveniencia = 5.00;
+        double precoIngresso = 25.00;
+
+        double custoBruto =
+                taxaConveniencia + (quantidadeIngressos * precoIngresso);
+
     }
 }
